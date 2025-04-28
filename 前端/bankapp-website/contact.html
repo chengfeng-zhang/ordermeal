@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>联系我们</title>
+    <style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e0e0e0;
+        padding: 10px 50px;
+    }
+
+    .nav-logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .nav-links button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    </style>
+    
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- 导航栏 -->
+    <nav class="bg-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">美味餐厅</a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-white hover:text-gray-200">首页</a></li>
+                <li><a href="about.html" class="text-white hover:text-gray-200">关于我们</a></li>
+                <li><a href="menu.html" class="text-white hover:text-gray-200">产品与服务</a></li>
+                <li><a href="contact.html" class="text-white hover:text-gray-200">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 联系我们部分 -->
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-4">联系我们</h1>
+
+        <!-- 联系方式 -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-2">联系方式</h2>
+            <p><i class="fa-solid fa-phone"></i> 客服热线: 400-123-4567</p>
+            <p><i class="fa-solid fa-envelope"></i> 电子邮箱: cservie@ordersystem.com</p>
+            <p><i class="fa-brands fa-weixin"></i> 微信公众号: ordersystem_wechat</p>
+            <p><i class="fa-brands fa-weibo"></i> 微博: @eordersystem_weibo</p>
+        </div>
+
+        <!-- 联系地址 -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-2">联系地址</h2>
+            <p><i class="fa-solid fa-location-dot"></i> 地址: 河南省新乡市红旗区经开区经七路与纬八路交叉口</p>
+        </div>
+
+        <!-- 在线联系表单 -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-2">在线联系表单</h2>
+            <form action="#">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">姓名</label>
+                    <input type="text" id="name" name="name" class="border border-gray-300 p-2 w-full rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">电子邮箱</label>
+                    <input type="email" id="email" name="email" class="border border-gray-300 p-2 w-full rounded"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 font-bold mb-2">联系电话</label>
+                    <input type="tel" id="phone" name="phone" class="border border-gray-300 p-2 w-full rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block text-gray-700 font-bold mb-2">主题</label>
+                    <input type="text" id="subject" name="subject" class="border border-gray-300 p-2 w-full rounded"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">留言内容</label>
+                    <textarea id="message" name="message" rows="4"
+                        class="border border-gray-300 p-2 w-full rounded" required></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700">提交</button>
+            </form>
+        </div>
+
+        <!-- 客服工作时间 -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-2">客服工作时间</h2>
+            <p><i class="fa-solid fa-clock"></i> 周一至周五 9:00 - 18:00</p>
+        </div>
+
+        <!-- 业务部门分述 -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-2">业务部门分述</h2>
+            <ul>
+                <li>
+                    <h3 class="text-lg font-bold">销售部门</h3>
+                    <p>联系人: 张部长</p>
+                    <p>联系电话: 010-12345678</p>
+                    <p>电子邮箱: zhang@example.com</p>
+                </li>
+                <li>
+                    <h3 class="text-lg font-bold">技术支持部门</h3>
+                    <p>联系人: 夏部长</p>
+                    <p>联系电话: 010-87654321</p>
+                    <p>电子邮箱: xia@example.com</p>
+                </li>
+                <li>
+                    <h3 class="text-lg font-bold">售后服务部门</h3>
+                    <p>联系人: 王部长</p>
+                    <p>联系电话: 010-24681357</p>
+                    <p>电子邮箱: wang@example.com</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 地图导航 -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-2">地图导航</h2>
+            <iframe
+                src="https://map.baidu.com/search/%E6%B2%B3%E5%8D%97%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6(%E5%B9%B3%E5%8E%9F%E6%B9%96%E6%A0%A1%E5%8C%BA)/@12698923.185649402,4180126.8497626944,18.39z?querytype=s&da_src=shareurl&wd=%E6%B2%B3%E5%8D%97%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6(%E5%B9%B3%E5%8E%9F%E6%B9%96%E6%A0%A1%E5%8C%BA)&c=308&src=0&wd2=%E6%96%B0%E4%B9%A1%E5%B8%82%E7%BA%A2%E6%97%97%E5%8C%BA&pn=0&sug=1&l=13&b=(12766232,3925568;12813656,3952320)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&sug_forward=ff1cd36fc8da7063c9c3db0a&device_ratio=2"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- 常见问题解答 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-bold mb-2">常见问题解答（FAQ）</h2>
+            <details class="mb-2">
+                <summary class="font-bold">产品购买流程是怎样的？</summary>
+                <p>您可以先浏览我们的产品页面，选择您需要的产品，加入购物车后进行结算，填写收货地址和支付信息即可完成购买。</p>
+            </details>
+            <details>
+                <summary class="font-bold">如何获取技术支持？</summary>
+                <p>您可以通过拨打技术支持部门的联系电话 010-87654321，或者发送电子邮件至 support@example.com 获得技术支持。</p>
+            </details>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-blue-600 p-4 text-white text-center">
+        <p>&copy; 2025 美味餐厅。保留所有权利。</p>
+    </footer>
+</body>
+
+</html>
+    
